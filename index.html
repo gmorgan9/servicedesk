@@ -9,95 +9,27 @@
         * {
             margin: 0;
         }
-/* .container {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar {
-  width: 40px; 
-  background-color: #1C3144; 
-}
-
-.content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.topbar {
-  height: 40px; 
-  background-color: #fff; 
-  border-bottom: 1px solid #e9ebed;
-}
-
-.main-content {
-  flex-grow: 1;
-} */
-
-
-
-
-/* .container {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar {
-  width: 80px; 
-  background-color: #f1f1f1; 
-}
-
-.sidebar1 {
-  margin-right: 10px; 
-  background-color: #1C3144;
-}
-
-.sidebar2 {
-  width: 120px; 
-}
-
-.content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.topbar {
-  height: 40px; 
-  background-color: #fff;
-  border-bottom: 1px solid #e9ebed;
-}
-
-.main-content {
-  flex-grow: 1;
-} */
-
-
-
-
 .container {
   display: flex;
   height: 100vh;
 }
 
-.topbar {
-  width: 100%; /* Extend the top bar to the full width */
-  background-color: #333; /* Adjust the background color */
-  color: #fff; /* Adjust the text color */
-}
-
 .sidebar {
-  width: 80px; /* Adjust the width as per your requirement */
-  background-color: #f1f1f1; /* Adjust the background color */
+  width: 40px; /* Adjust the width as per your requirement */
+  background-color: #1C3144; /* Adjust the background color */
 }
 
-.sidebar1 {
-  height: calc(100% - 40px); /* Adjust the height to leave space for the top bar */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.sidebar2 {
-  width: 60px; /* Adjust the width as per your requirement */
+.topbar {
+  height: 40px; /* Adjust the height as per your requirement */
+  background-color: #fff; /* Adjust the background color */
+  /* color: #fff; */
+  border-bottom: 1px solid #e9ebed;
 }
 
 .main-content {
@@ -108,15 +40,50 @@
 
 
 
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 80px; /* Adjust the width as per your requirement */
+  background-color: #f1f1f1; /* Adjust the background color */
+}
+
+.sidebar1 {
+  margin-right: 10px; /* Adjust the margin as per your requirement */
+  background-color: #1C3144;
+}
+
+.sidebar2 {
+  width: 120px; /* Adjust the width as per your requirement */
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 40px; /* Adjust the height as per your requirement */
+  background-color: #fff; /* Adjust the background color */
+  /* color: #fff; */
+  border-bottom: 1px solid #e9ebed;
+}
+
+.main-content {
+  flex-grow: 1;
+  /* Add any styles for the main content area */
+}
+
+
+
     </style>
 </head>
 <body>
     
 <div class="container">
-  <div class="topbar">
-    <!-- Top bar content goes here -->
-    top
-  </div>
   <div class="sidebar sidebar1">
     <!-- Sidebar 1 content goes here -->
     1
@@ -125,12 +92,17 @@
     <!-- Sidebar 2 content goes here -->
     2
   </div>
-  <div class="main-content">
-    <!-- Main content goes here -->
-    main
+  <div class="content">
+    <div class="topbar">
+      <!-- Top bar content goes here -->
+      top
+    </div>
+    <div class="main-content">
+      <!-- Main content goes here -->
+      all
+    </div>
   </div>
 </div>
-
 
 
 
