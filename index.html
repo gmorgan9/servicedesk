@@ -6,8 +6,9 @@
     <title>Service Desk</title>
 
     <style>
-        .container {
+.container {
   display: flex;
+  height: 100vh;
 }
 
 .sidebar {
@@ -15,24 +16,42 @@
   background-color: #f1f1f1; /* Adjust the background color */
 }
 
-.topbar {
+.content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 40px; /* Adjust the height as per your requirement */
   background-color: #333; /* Adjust the background color */
   color: #fff; /* Adjust the text color */
 }
+
+.main-content {
+  flex-grow: 1;
+  /* Add any styles for the main content area */
+}
+
 
     </style>
 </head>
 <body>
     
-    <div class="container">
-      <div class="sidebar">
-        <!-- Sidebar content goes here -->
-      </div>
-      <div class="topbar">
-        <!-- Top bar content goes here -->
-      </div>
+<div class="container">
+  <div class="sidebar">
+    <!-- Sidebar content goes here -->
+  </div>
+  <div class="content">
+    <div class="topbar">
+      <!-- Top bar content goes here -->
     </div>
+    <div class="main-content">
+      <!-- Main content goes here -->
+    </div>
+  </div>
+</div>
+
 
     <h1>Service Desk</h1>
 
