@@ -6,44 +6,48 @@
     <title>Service Desk</title>
 
     <style>
-        * {
-            margin: 0;
-        }
-.container {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar1 {
-  width: 35px; /* Adjust the width as per your requirement */
-  background-color: #1C3144; /* Adjust the background color */
-}
-.sidebar2 {
-  width: 120px; /* Adjust the width as per your requirement */
-  background-color: #fff; /* Adjust the background color */
-  border-right: 1px solid #e9ebed;
-}
-
-.content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.topbar {
-  height: 40px !important;
-  background-color: #fff;
-  border-bottom: 1px solid #e9ebed;
-}
-
-.main-content {
-  flex-grow: 1;
-}
-
-.row {
+       * {
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar1 {
+    width: 40px; /* Adjust the width as per your requirement */
+    background-color: #1C3144; /* Adjust the background color */
+  }
+  
+  .sidebar2 {
+    width: 120px; /* Adjust the width as per your requirement */
+    background-color: #fff; /* Adjust the background color */
+    border-right: 1px solid #e9ebed;
+    height: calc(100% - 40px); /* Reduce the height by 40px */
+  }
+  
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; /* Add margin to create space for the top bar */
+  }
+  
+  .topbar {
+    height: 40px !important;
+    background-color: #fff;
+    border-bottom: 1px solid #e9ebed;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+  }
+  
+  .row {
     display: flex;
     flex-direction: row;
-}
+  }
 
 
 
