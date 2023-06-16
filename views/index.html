@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- CUSTOME STYLES -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 
     <title>Service Desk</title>
 
@@ -29,13 +29,12 @@
 <div class="gm-container">
   <div class="sidebar sidebar1">
     <div class="icons">
-      <a href="/" class="icon active"><i class="fa-solid fa-house"></i></a>
-      <a href="/views/" class="icon"><i class="fa-solid fa-clipboard-list"></i></a>
-      <a href="" class="icon"><i class="fa-solid fa-user-group"></i></a>
-      <a href="" class="icon"><i class="fa-solid fa-chart-simple"></i></a>
-      <a href="" class="icon"><i class="fa-solid fa-gear"></i></a>
+        <a href="/" class="icon"><i class="fa-solid fa-house"></i></a>
+        <a href="/views/" class="icon active"><i class="fa-solid fa-clipboard-list"></i></a>
+        <a href="" class="icon"><i class="fa-solid fa-user-group"></i></a>
+        <a href="" class="icon"><i class="fa-solid fa-chart-simple"></i></a>
+        <a href="" class="icon"><i class="fa-solid fa-gear"></i></a>
     </div>
-    
     
   </div>
   
@@ -55,67 +54,40 @@
             </div>
         </div>
         <div class="gm-row">
+          <div class="gm-sidebar sidebar2">
+            <div class="gm-contain">
+              <div class="gm-header" id="head">
+                <div class="s-left">
+                  <p class="gm-title new">
+                    Views
+                  </p>
+                </div>
+                <div class="s-right">
+                  <a href="" class="s-icons" id="a-side-tog"><i class="bi bi-arrow-clockwise" id="side-tog"></i></a>
+                  <i class="bi bi-chevron-left s-icons left-btn" id="sidebar-toggle"></i>
+                  <i class="bi bi-chevron-right s-icons sh" id="sidebar-open"></i>
+                </div>
+              </div>
+              <hr class="s-hr" id="hr">
+              <div class="gm-list">
+                <!-- Sidebar content -->
+              </div>
+            </div>
+          </div>
+          
+          
 
-
-            <div class="view-content">
+            <div class="main-content">
                 <!-- Main content goes here -->
-                <div class="view-content-inner" id="content">
+                <div class="main-content-inner" id="content">
                   <div class="top-head">
                     <h2>
-                      Service Desk Dashboard
+                      OpenTier(No 3rd Party)
                     </h2>
                     <div class="pt-2"></div>
-                    
-                    
-                        <div class="d-flex">
-                          <div class="left">
-                              <p style="font-size: 10px;margin-bottom: 3px;">
-                                <span class="fw-bold">Ticket Statistics</span>
-                                <span class="text-muted">(this week)</span>
-                              </p>
-                            <ul class="list-group list-group-horizontal-sm">
-                              <li class="list-group-item text-center ps-3 pe-3">
-                                <span class="fw-bold">0</span><br>
-                                <span class="text-muted" style="font-size: 12px;">URGENT</span>
-                              </li>
-                              <li class="list-group-item text-center ps-4 pe-4">
-                                <span class="fw-bold">0</span><br>
-                                <span class="text-muted" style="font-size: 12px;">HIGH</span>
-                              </li>
-                              <li class="list-group-item text-center ps-3 pe-3">
-                                <span class="fw-bold">0</span><br>
-                                <span class="text-muted" style="font-size: 12px;">NORMAL</span>
-                              </li>
-                              <li class="list-group-item text-center ps-4 pe-4">
-                                <span class="fw-bold">0</span><br>
-                                <span class="text-muted" style="font-size: 12px;">LOW</span>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div class="ps-4"></div>
-                            <div class="left">
-                              <p style="font-size: 10px;margin-bottom: 3px;">
-                                <span class="fw-bold">Ticket Count</span>
-                                <span class="text-muted">(this week)</span>
-                              </p>
-                            <ul class="list-group list-group-horizontal-sm">
-                              <li class="list-group-item text-center ps-4 pe-4">
-                                <span class="fw-bold">1</span><br>
-                                <span class="text-muted" style="font-size: 12px;">OPEN</span>
-                              </li>
-                              <li class="list-group-item text-center ps-3 pe-3">
-                                <span class="fw-bold">1</span><br>
-                                <span class="text-muted" style="font-size: 12px;">PENDING</span>
-                              </li>
-                              <li class="list-group-item text-center ps-3 pe-3">
-                                <span class="fw-bold">0</span><br>
-                                <span class="text-muted" style="font-size: 12px;">CLOSED</span>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      
+                    <button class="btn btn-outline-primary btn-sm btn-no-hover btn-mine">
+                      <i class="bi bi-sliders"></i> &nbsp; filter
+                    </button>
                     <div class="pt-3"></div>
                     <p class="text-muted page-count">
                       544 tickets  (Page 1 of 19)
@@ -164,6 +136,6 @@
 
     
 
-<script src="assets/js/collapse.js"></script>
+<script src="../assets/js/collapse.js"></script>
 </body>
 </html>
